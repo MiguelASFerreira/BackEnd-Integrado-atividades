@@ -1,40 +1,33 @@
-var num1;
-var num2;
+function parImpar(variavel) {
+    if (variavel%2 == 0) {
+        console.log("É par\n--------------");
+    } else {
+        console.log("É ímpar\n--------------");
+    }
+}
 
 function soma(n1, n2) {
     var soma = n1 + n2;
-    if (soma%2 == 0) {
-        console.log("Soma:", soma, ". É par");
-    } else {
-        console.log("Soma:", soma, ". É ímpar");
-    }
+    console.log("Soma:",soma);
+    parImpar(soma);
 }
 
 function subtrair(n1, n2) {
     var sub = n1 - n2;
-    if (sub%2 == 0) {
-        console.log("Subtração:", sub, ". É par");
-    } else {
-        console.log("Subtração:", sub, ". É ímpar");
-    }
+    console.log("Subtração:",sub);
+    parImpar(sub);
 }
 
 function dividir(n1, n2) {
     var div = n1 / n2;
-    if (div%2 == 0) {
-        console.log("Divisão:", div, ". É par");
-    } else {
-        console.log("Divisão:", div, ". É ímpar");
-    }
+    console.log("Divisão:",div);
+    parImpar(div);
 }
 
 function multi(n1, n2) {
     var multi = n1 / n2;
-    if (multi%2 == 0) {
-        console.log("Multiplicação:", multi, ". É par");
-    } else {
-        console.log("Multiplicação:", multi, ". É ímpar");
-    }
+    console.log("Multiplicação:",multi);
+    parImpar(multi);
 }
 
 soma(5,5);
